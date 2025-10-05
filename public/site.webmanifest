@@ -1,0 +1,11 @@
+{
+  "name": "Places in Abuja",
+  "short_name": "Abuja",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0b0f12",
+  "theme_color": "#3aa66b",
+  "icons": []
+}
+
+
