@@ -42,7 +42,7 @@ export default async function HomePage() {
                   Discover Places in Abuja
                 </h1>
                 <p className="text-lg sm:text-xl text-white/90 mb-8 max-w-2xl">
-                  Explore restaurants, parks, events and hidden gems — curated guides and honest reviews from Nigeria's capital.
+                  Explore restaurants, parks, events and hidden gems — curated guides and honest reviews from Nigeria&apos;s capital.
                 </p>
                 <div className="flex flex-wrap gap-4">
                   <Link 
