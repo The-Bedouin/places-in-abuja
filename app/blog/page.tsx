@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { getAllPosts } from '@/lib/posts';
 import PostCard from '@/components/PostCard';
+import AbujaMap from '@/components/AbujaMap';
 
 export const dynamic = 'force-static';
 
@@ -32,6 +33,10 @@ export default async function BlogIndex({ searchParams }: { searchParams: Record
 
       <div className="mt-8 text-center text-sm">
         <Link className="underline" href="/feed.xml">RSS Feed</Link>
+      </div>
+
+      <div className="mt-12">
+        <AbujaMap />
       </div>
     </div>
   );

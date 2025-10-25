@@ -2,7 +2,7 @@
 title: "Aso Rock Abuja: Nigeria's Presidential Symbol - Complete Visitor Guide 2024"
 date: 2024-12-19
 tags: [Landmarks, Government Buildings, Presidential Villa, Abuja Tourism, National Monuments, Political Sites]
-image: /placeholder.jpg
+image: /aso%20villa.png
 excerpt: "Discover Aso Rock Abuja, Nigeria's most iconic landmark and presidential symbol. Complete guide to history, significance, visiting information, and the political heart of Nigeria."
 author: "Abuja Places Guide"
 place:

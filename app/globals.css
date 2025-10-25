@@ -19,7 +19,7 @@ body {
 }
 
 .card {
-  @apply rounded-lg overflow-hidden bg-white dark:bg-gray-900 shadow hover:shadow-lg transition-shadow;
+  @apply rounded-lg overflow-hidden bg-white dark:bg-gray-900 shadow hover:shadow-lg transition-all duration-300 border border-transparent hover:border-2 hover:border-green-500 dark:hover:border-green-500;
 }
 
 .chip {

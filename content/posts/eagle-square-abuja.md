@@ -2,7 +2,7 @@
 title: "Eagle Square Abuja: Nigeria's Premier Event Venue - Complete Visitor Guide 2024"
 date: 2024-12-19
 tags: [Landmarks, Events, National Monuments, Abuja Tourism, Cultural Sites, Government Buildings]
-image: /placeholder.jpg
+image: /eagles%20square%20abuja.png
 excerpt: "Explore Eagle Square Abuja, Nigeria's most prestigious event venue. Complete guide to history, events, visiting information, and the significance of this national landmark."
 author: "Abuja Places Guide"
 place:
