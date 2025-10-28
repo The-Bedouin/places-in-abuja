@@ -1,13 +1,25 @@
 import type { BlogPost } from '@/types/content';
 
 export function buildArticleJsonLd(post: BlogPost, baseUrl: string) {
+  // Format dates with timezone (using West Africa Time - WAT)
+  const formatDateWithTimezone = (dateString: string) => {
+    const date = new Date(dateString);
+    // Add timezone offset for West Africa Time (UTC+1)
+    const offsetDate = new Date(date.getTime() + (1 * 60 * 60 * 1000));
+    return offsetDate.toISOString().replace('Z', '+01:00');
+  };
+
   const article: any = {
     '@context': 'https://schema.org',
     '@type': 'Article',
     headline: post.title,
-    datePublished: post.date,
-    dateModified: post.date,
-    author: post.author ? { '@type': 'Person', name: post.author } : undefined,
+    datePublished: formatDateWithTimezone(post.date),
+    dateModified: formatDateWithTimezone(post.date),
+    author: post.author ? { 
+      '@type': 'Person', 
+      name: post.author,
+      url: `${baseUrl}/about` // Adding author URL
+    } : undefined,
     image: post.image ? [absoluteUrl(baseUrl, post.image)] : undefined,
     description: post.excerpt,
     mainEntityOfPage: {
