@@ -6,6 +6,7 @@ import { getAllPosts } from '@/lib/posts';
 import PostCard from '@/components/PostCard';
 import CategorySidebar from '@/components/CategorySidebar';
 import AbujaMap from '@/components/AbujaMap';
+import MagicBento from '@/components/MagicBento';
 
 export default async function HomePage() {
   const posts = await getAllPosts();
@@ -117,12 +118,19 @@ export default async function HomePage() {
             </div>
 
             <div>
-              <h2 className="text-2xl sm:text-3xl font-bold mb-6">Latest Reviews</h2>
-              <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                {recent.map((p) => (
-                  <PostCard key={p.slug} post={p} />
-                ))}
-              </div>
+              <h2 className="text-2xl sm:text-3xl font-bold mb-6">Categories</h2>
+              <MagicBento 
+                textAutoHide={true}
+                enableStars={true}
+                enableSpotlight={true}
+                enableBorderGlow={true}
+                enableTilt={false}
+                enableMagnetism={true}
+                clickEffect={true}
+                spotlightRadius={300}
+                particleCount={12}
+                glowColor="0, 135, 81"
+              />
             </div>
           </section>
 
