@@ -37,6 +37,15 @@ export default async function FoodDrinkPage() {
   const baseUrl = 'https://placesinabuja.com';
   const jsonLd = buildArticleJsonLd(post, baseUrl);
 
+  // Get related posts
+  const { getAllPosts } = await import('@/lib/posts');
+  const allPosts = await getAllPosts();
+  const related = allPosts
+    .filter((p) => p.slug !== post.slug)
+    .filter((p) => p.tags?.some((t) => post.tags?.includes(t)))
+    .slice(0, 5)
+    .map((p) => ({ slug: p.slug, title: p.title }));
+
   const hasToc = /(^|\n)##\s+|(^|\n)###\s+/m.test(post.content);
 
   return (
@@ -105,7 +114,7 @@ export default async function FoodDrinkPage() {
 
          {/* Right rail */}
          <aside className="lg:col-span-2 col-span-1">
-           <RightRail />
+           <RightRail related={related} />
          </aside>
        </div>
 
