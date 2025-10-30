@@ -15,10 +15,10 @@ export default function ArticleTOC({ rootSelector = '#article-content' }: { root
   useEffect(() => {
     const root = document.querySelector(rootSelector) as HTMLElement | null;
     if (!root) return;
-    const headings = Array.from(root.querySelectorAll('h2, h3')) as HTMLHeadingElement[];
+    const headings = Array.from(root.querySelectorAll('h2')) as HTMLHeadingElement[];
     const toc: TocItem[] = headings
       .filter((h) => h.id)
-      .map((h) => ({ id: h.id, text: h.innerText, level: (h.tagName === 'H2' ? 2 : 3) as 2 | 3 }));
+      .map((h) => ({ id: h.id, text: h.innerText, level: 2 as 2 }));
     setItems(toc);
 
     const observer = new IntersectionObserver(
@@ -54,7 +54,7 @@ export default function ArticleTOC({ rootSelector = '#article-content' }: { root
       <h2 className="text-xs uppercase tracking-wider text-gray-500 dark:text-gray-400 mb-3">On this page</h2>
       <ul className="space-y-1">
         {items.map((item) => (
-          <li key={item.id} className={item.level === 3 ? 'pl-4' : undefined}>
+          <li key={item.id}>
             <a
               href={`#${item.id}`}
               className={`block rounded px-2 py-1 transition-colors ${
