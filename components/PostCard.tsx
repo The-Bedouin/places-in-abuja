@@ -29,9 +29,7 @@ export default function PostCard({ post, featured: _featured = false }: { post: 
               ))}
             </div>
             <h3 className="text-lg font-semibold leading-snug text-white drop-shadow-2xl shadow-black/70">{post.title}</h3>
-            {post.excerpt && (
-              <p className="mt-2 text-sm text-white/90 drop-shadow-xl shadow-black/60 line-clamp-2">{post.excerpt}</p>
-            )}
+            {/* excerpt removed from card cover */}
             <p className="mt-3 text-sm text-white font-medium drop-shadow-2xl shadow-black/70">Read more →</p>
           </div>
         </div>

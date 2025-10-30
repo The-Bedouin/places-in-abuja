@@ -33,7 +33,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <Header />
+          <div className="lg:hidden">
+            <Header />
+          </div>
           <main id="main" className="container-responsive py-8">
             {children}
           </main>

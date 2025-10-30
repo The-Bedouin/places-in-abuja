@@ -7,6 +7,9 @@ import PostCard from '@/components/PostCard';
 import CategorySidebar from '@/components/CategorySidebar';
 import AbujaMap from '@/components/AbujaMap';
 import MagicBento from '@/components/MagicBento';
+import dynamic from 'next/dynamic';
+
+const HeroNav = dynamic(() => import('@/components/HeroNav'), { ssr: false });
 
 export default async function HomePage() {
   const posts = await getAllPosts();
@@ -26,6 +29,10 @@ export default async function HomePage() {
             priority
             sizes="100vw"
           />
+          {/* Desktop overlay nav */}
+          <div className="absolute inset-x-0 top-6 z-50">
+            <HeroNav />
+          </div>
           
           {/* Modern gradient overlay with multiple layers */}
           <div className="absolute inset-0 bg-gradient-to-br from-black/80 via-black/40 to-transparent" />
@@ -69,31 +76,31 @@ export default async function HomePage() {
           <div className="absolute right-8 bottom-24 hidden lg:block">
             <div className="backdrop-blur-2xl bg-white/10 border border-white/20 rounded-2xl p-5 shadow-2xl max-w-[280px] animate-fade-in">
               <h2 className="text-lg font-bold mb-3 text-white">Popular Categories</h2>
-              <div className="space-y-2 max-h-[400px] overflow-y-auto pr-2">
-                {/* Render top categories */}
-                {(() => {
-                  const tagToCount = new Map<string, number>();
-                  for (const p of posts) {
-                    for (const t of p.tags || []) {
-                      tagToCount.set(t, (tagToCount.get(t) || 0) + 1);
-                    }
-                  }
-                  const tags = [...tagToCount.entries()].sort((a, b) => b[1] - a[1]).slice(0, 6);
-                  return tags.map(([tag, count]) => (
-                    <Link 
-                      key={tag}
-                      href={`/blog?tag=${encodeURIComponent(tag)}`}
-                      className="block group hover:bg-white/10 rounded-lg p-3 transition-all duration-200 border border-transparent hover:border-white/20"
-                    >
-                      <div className="flex items-center justify-between">
-                        <span className="font-medium text-sm text-white/90 group-hover:text-white transition-colors">{tag}</span>
-                        <span className="text-xs bg-white/20 text-white px-2.5 py-1 rounded-full group-hover:bg-white/30 transition-all">
-                          {count}
-                        </span>
-                      </div>
-                    </Link>
-                  ));
-                })()}
+              <div className="space-y-2">
+                <Link 
+                  href={`/blog?tag=${encodeURIComponent('Food & Drink')}`}
+                  className="block group hover:bg-white/10 rounded-lg p-3 transition-all duration-200 border border-transparent hover:border-white/20"
+                >
+                  <span className="font-medium text-sm text-white/90 group-hover:text-white transition-colors">Food & Drink</span>
+                </Link>
+                <Link 
+                  href={`/blog?tag=${encodeURIComponent('Things to Do')}`}
+                  className="block group hover:bg-white/10 rounded-lg p-3 transition-all duration-200 border border-transparent hover:border-white/20"
+                >
+                  <span className="font-medium text-sm text-white/90 group-hover:text-white transition-colors">Things to Do</span>
+                </Link>
+                <Link 
+                  href={`/blog?tag=${encodeURIComponent('Events')}`}
+                  className="block group hover:bg-white/10 rounded-lg p-3 transition-all duration-200 border border-transparent hover:border-white/20"
+                >
+                  <span className="font-medium text-sm text-white/90 group-hover:text-white transition-colors">Events</span>
+                </Link>
+                <Link 
+                  href={`/blog?tag=${encodeURIComponent('Abuja Guide')}`}
+                  className="block group hover:bg-white/10 rounded-lg p-3 transition-all duration-200 border border-transparent hover:border-white/20"
+                >
+                  <span className="font-medium text-sm text-white/90 group-hover:text-white transition-colors">Abuja Guide</span>
+                </Link>
               </div>
             </div>
           </div>

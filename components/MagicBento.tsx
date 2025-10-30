@@ -1,14 +1,15 @@
 'use client';
 
 import React, { useRef, useEffect, useCallback, useState } from 'react';
+import Link from 'next/link';
 import { gsap } from 'gsap';
 import './MagicBento.css';
 
 export interface BentoCardProps {
   color?: string;
-  title?: string;
-  description?: string;
   label?: string;
+  image?: string;
+  href?: string;
   textAutoHide?: boolean;
   disableAnimations?: boolean;
 }
@@ -35,39 +36,32 @@ const MOBILE_BREAKPOINT = 768;
 const cardData: BentoCardProps[] = [
   {
     color: '#060010',
-    title: 'Analytics',
-    description: 'Track user behavior',
-    label: 'Events'
+    label: 'Events',
+    image: '/eventsinabujacategorycover.png'
   },
   {
     color: '#060010',
-    title: 'Dashboard',
-    description: 'Centralized data view',
     label: 'Overview'
   },
   {
     color: '#060010',
-    title: 'Collaboration',
-    description: 'Work together seamlessly',
-    label: 'Food and Drink'
+    label: 'Food and Drink',
+    image: '/foodanddrinkcategorycover.png',
+    href: '/food-drink'
   },
   {
     color: '#060010',
-    title: 'Automation',
-    description: 'Streamline workflows',
-    label: 'Things to Do'
+    label: 'Things to Do',
+    image: '/thingstododinabujacategorycover.png'
   },
   {
     color: '#060010',
-    title: 'Integration',
-    description: 'Connect favorite tools',
     label: 'Connectivity'
   },
   {
     color: '#060010',
-    title: 'Security',
-    description: 'Enterprise-grade protection',
-    label: 'Abuja Guide'
+    label: '',
+    image: '/abujaguidecategorycover.png'
   }
 ];
 
@@ -550,6 +544,9 @@ const MagicBento: React.FC<BentoProps> = ({
             className: baseClassName,
             style: {
               backgroundColor: card.color,
+              backgroundImage: card.image ? `url(${card.image})` : undefined,
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
               '--glow-color': glowColor
             } as React.CSSProperties
           };
@@ -566,13 +563,14 @@ const MagicBento: React.FC<BentoProps> = ({
                 clickEffect={clickEffect}
                 enableMagnetism={enableMagnetism}
               >
-                <div className="magic-bento-card__header">
-                  <div className="magic-bento-card__label">{card.label}</div>
-                </div>
-                <div className="magic-bento-card__content">
-                  <h2 className="magic-bento-card__title">{card.title}</h2>
-                  <p className="magic-bento-card__description">{card.description}</p>
-                </div>
+                {card.label && (
+                  <div className="magic-bento-card__header">
+                    <div className="magic-bento-card__label">{card.label}</div>
+                  </div>
+                )}
+                {card.href && (
+                  <Link href={card.href} aria-label={card.label || 'category'} className="absolute inset-0 z-10" />
+                )}
               </ParticleCard>
             );
           }
@@ -690,13 +688,14 @@ const MagicBento: React.FC<BentoProps> = ({
                 el.addEventListener('click', handleClick);
               }}
             >
-              <div className="magic-bento-card__header">
-                <div className="magic-bento-card__label">{card.label}</div>
-              </div>
-              <div className="magic-bento-card__content">
-                <h2 className="magic-bento-card__title">{card.title}</h2>
-                <p className="magic-bento-card__description">{card.description}</p>
-              </div>
+              {card.label && (
+                <div className="magic-bento-card__header">
+                  <div className="magic-bento-card__label">{card.label}</div>
+                </div>
+              )}
+              {card.href && (
+                <Link href={card.href} aria-label={card.label || 'category'} className="absolute inset-0 z-10" />
+              )}
             </div>
           );
         })}
