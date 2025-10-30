@@ -24,7 +24,7 @@ In this guide, we'll dive deep into:
 
 **Abuja's Restaurant Scene**: We take you on a comprehensive journey through the city's culinary backbone. This is more than just a list; it's a deep dive into the landscape that defines Abuja's dining culture. We explore everything from hidden-gem canteens to critically-acclaimed, white-tablecloth establishments perfect for a special occasion. 
 
-**The Heartbeat of the City—Street Food**: To truly know Abuja, you must taste it on the streets. This section is your passport to the city's most authentic and energetic culinary expression. We'll guide you to the most perfectly roasted bole and fish and introduce you to the comforting warmth of fresh masa. 
+**The Heartbeat of the City—Street Food**: To truly know Abuja, you must taste it on the streets. This section is your passport to the city's most authentic and energetic culinary expression. We'll guide you to the most perfectly roasted bole and fish and introduce you to the comforting warmth of fresh masa. For a complete deep-dive into Abuja's street food scene, check out our [Ultimate Abuja Street Food Guide](/blog/street-food-abuja). 
 
 **Abuja's Thriving Cafe Culture**: The city's coffee scene has exploded recently, transforming cafes into the capital's new living rooms. We'll show you the best spots for a productive afternoon of remote work, the most beautiful "Instagrammable" locations, and the artisanal shops for a truly expertly crafted brew. 
 
@@ -58,7 +58,7 @@ To truly understand this city, you have to experience it on the streets, guided 
 
 Here, the staples are legendary. We're talking about suya, the undisputed king of Nigerian street food—perfectly spiced, thinly sliced meat grilled over open flames, drenched in fiery yaji pepper, and served with fresh onions and tomatoes. Then there's bole, roasted plantain grilled to sweet, smoky perfection and paired with a rich, spicy pepper sauce and grilled fish. Visiting a popular spot in areas like Wuse Market or Garki at night is an experience in itself. This is food without pretence, served hot and fresh—the true, unfiltered taste of the capital. 
 
-Ready to explore? Our complete guide features the vendors and markets you simply can't miss. Check out our [Abuja's Best Street Food Guide]. 
+Ready to explore? Our complete guide features the vendors and markets you simply can't miss. Check out our [Ultimate Abuja Street Food Guide](/blog/street-food-abuja). 
 
 ## Abuja's Thriving Cafe Culture
 Today, the city's cafe scene has blossomed into a full-blown cultural movement. Fueled by a new generation of entrepreneurs, creatives, and digital nomads, cafes have become the capital's essential "third places"—de facto boardrooms, vibrant social settings, and quiet corners for a moment of peace. 
