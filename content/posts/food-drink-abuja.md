@@ -18,7 +18,7 @@ Abuja doesn't just offer food; it offers experiences, memories, and traditions w
 
 ![Restaurant](/resturant.jpeg)
 
-That's why we're here. Forget juggling ten different blogs or outdated recommendations. Consider this page your definitive map, meticulously curated from our team's direct, on-the-ground experience to be the only guide you'll ever need to eat and drink your way through the capital. Whether you're hunting for the perfect pounded yam, world-class gourmet dishes, or a rooftop mocktail with a stunning view, we've got you covered. 
+That's why we're here. Forget juggling ten blogs or outdated recommendations. Consider this page your definitive map—meticulously curated from our team's on-the-ground experience—the only guide you'll need to eat and drink your way through the capital. Whether you're hunting for perfect pounded yam, world-class dishes, or a rooftop mocktail with a stunning view, we've got you covered.
 
 In this guide, we'll dive deep into:
 
