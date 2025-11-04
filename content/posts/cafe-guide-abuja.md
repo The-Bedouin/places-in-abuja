@@ -10,7 +10,7 @@ image: "/cafeinabuja.jpeg"
 ---
 
 **By Femi Adebayo, Chief Food Critic at Places in Abuja**  
-<p><strong>Last Updated: October 30, 2025</strong></p>
+**Last Updated: October 30, 2025**
 
 There’s a unique magic to a great cafe. It’s in the rich aroma of freshly ground coffee that greets you at the door, the gentle hiss of the espresso machine, and the low, creative buzz of conversations and keyboards. Just a few years ago, our team found that discovering this perfect blend of ambiance and quality in Abuja was a mission. Today, the city’s cafe culture has absolutely exploded, offering a stylish spot for every possible need.
 
