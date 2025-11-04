@@ -47,7 +47,7 @@ Over in Jabi, a more relaxed, contemporary lifestyle vibe has taken hold. Its sc
 
 As one of the largest housing estates in West Africa, Gwarinpa's dining scene is a sprawling, self-sufficient universe built to serve its massive community. From what we've seen, the vibe here is less about trendy fine-dining and more about reliable, family-favourite restaurants that have become local institutions. It's a practical and diverse food hub that caters to every craving without needing to venture into the city centre. 
 
-For a complete breakdown of our top picks by area, cuisine, and price, see our [Ultimate Guide to the 50 Best Restaurants in Abuja]. 
+For a complete breakdown of our top picks by area, cuisine, and price, see our [Ultimate Guide to the 50 Best Restaurants in Abuja](/food-drink/best-restaurants-abuja). 
 
 ## The Heartbeat of the City: Abuja Street Food
 To truly understand this city, you have to experience it on the streets, guided by the scent of charcoal smoke and the sound of sizzling meat. This is where the real Abuja comes alive after dusk—a bustling world of flavour where bankers in suits and teenagers in jeans stand side-by-side, united by a love for good food. 

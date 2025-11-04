@@ -37,6 +37,56 @@ export default async function FoodDrinkPage() {
   const baseUrl = 'https://placesinabuja.com';
   const jsonLd = buildArticleJsonLd(post, baseUrl);
 
+  const SCHEMA_JSON = `{
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://placesinabuja.com/#organization",
+        "name": "Places in Abuja",
+        "url": "https://placesinabuja.com/",
+        "logo": { "@type": "ImageObject", "url": "https://placesinabuja.com/logo.svg" }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://placesinabuja.com/author/femi-adebayo/#person",
+        "name": "Femi Adebayo",
+        "url": "https://placesinabuja.com/author/femi-adebayo",
+        "jobTitle": "Chief Food Critic",
+        "description": "Your complete guide to discovering Abuja's culinary landscape. Femi has spent years exploring and documenting the capital's best food and drink spots.",
+        "worksFor": { "@id": "https://placesinabuja.com/#organization" }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://placesinabuja.com/food-drink#breadcrumb",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://placesinabuja.com/" },
+          { "@type": "ListItem", "position": 2, "name": "Food & Drink" }
+        ]
+      },
+      {
+        "@type": "BlogPosting",
+        "@id": "https://placesinabuja.com/food-drink#article",
+        "mainEntityOfPage": { "@type": "WebPage", "@id": "https://placesinabuja.com/food-drink" },
+        "headline": "The Ultimate Guide to Food & Drink in Abuja (2025)",
+        "description": "Your complete guide to discovering Abuja's incredible culinary landscape - from sizzling street suya to fine dining establishments.",
+        "datePublished": "2025-01-27T10:00:00+01:00",
+        "dateModified": "2025-01-27T10:00:00+01:00",
+        "author": { "@id": "https://placesinabuja.com/author/femi-adebayo/#person" },
+        "publisher": { "@id": "https://placesinabuja.com/#organization" }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://placesinabuja.com/food-drink#faq",
+        "mainEntity": [
+          { "@type": "Question", "name": "What is the best neighborhood for dining out in Abuja?", "acceptedAnswer": { "@type": "Answer", "text": "Wuse 2 is considered the epicenter of Abuja's dining world, known for its vibrant, high-energy atmosphere and a high concentration of trendy bistros and chic international restaurants." } },
+          { "@type": "Question", "name": "What is the most popular street food in Abuja?", "acceptedAnswer": { "@type": "Answer", "text": "Suya is the undisputed king of Nigerian street food. It consists of perfectly spiced, thinly sliced meat grilled over open flames and served with fiery yaji pepper, fresh onions, and tomatoes." } },
+          { "@type": "Question", "name": "Which area in Abuja is best for fine dining?", "acceptedAnswer": { "@type": "Answer", "text": "Maitama is the premier destination for fine dining in Abuja. It features a refined and exclusive atmosphere with luxurious establishments often housed in serene, leafy villas, perfect for power lunches and special occasions." } }
+        ]
+      }
+    ]
+  }`;
+
   // Get related posts
   const { getAllPosts } = await import('@/lib/posts');
   const allPosts = await getAllPosts();
@@ -53,6 +103,9 @@ export default async function FoodDrinkPage() {
       <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
         <Script id="post-jsonld" type="application/ld+json" strategy="afterInteractive">
           {JSON.stringify(jsonLd)}
+        </Script>
+        <Script id="food-drink-graph" type="application/ld+json" strategy="afterInteractive">
+          {SCHEMA_JSON}
         </Script>
 
          {/* Left TOC - hidden below lg */}

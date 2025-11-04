@@ -78,3 +78,15 @@ What's your absolute favourite cafe in Abuja? Did we miss your personal hidden g
 
 ## About the Author
 Femi Adebayo is the Chief Food Critic and co-founder of Places in Abuja. As a long-time remote worker and coffee aficionado, he has personally tested dozens of cafes across the city, meticulously rating them on everything from Wi-Fi stability and outlet availability to the quality of their espresso. His mission is to provide the most authentic, reliable, and deeply researched guides for anyone looking to eat, drink, or work in the capital.
+
+## Frequently Asked Questions {#faq}
+
+### What is the best cafe for remote work in Abuja?
+The best cafes for remote work in Abuja are those with tested high-speed Wi-Fi, ample plug sockets, and a moderate noise level. Our guide identifies specific spots that are optimized for productivity, ensuring you can work without frustrating connection drops.
+
+### Which neighborhood has the trendiest cafes in Abuja?
+Wuse 2 is the trendy, high-energy epicentre of Abuja's cafe culture. It boasts the highest concentration of stylish, popular, and talked-about cafes, making it the best destination if you want to be in the heart of the action.
+
+### Where can I find a quiet cafe for a business meeting in Abuja?
+Maitama is the ideal neighborhood for finding a quiet, upscale cafe suitable for a business meeting. The cafes there are known for their sophisticated, serene, and beautifully designed atmosphere with top-notch service.
+
