@@ -35,7 +35,6 @@ export default async function FoodDrinkPage() {
   if (!post) return notFound();
   
   const baseUrl = 'https://placesinabuja.com';
-  const jsonLd = buildArticleJsonLd(post, baseUrl);
 
   const SCHEMA_JSON = `{
     "@context": "https://schema.org",
@@ -101,9 +100,6 @@ export default async function FoodDrinkPage() {
   return (
     <>
       <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
-        <Script id="post-jsonld" type="application/ld+json" strategy="afterInteractive">
-          {JSON.stringify(jsonLd)}
-        </Script>
         <Script id="food-drink-graph" type="application/ld+json" strategy="afterInteractive">
           {SCHEMA_JSON}
         </Script>
