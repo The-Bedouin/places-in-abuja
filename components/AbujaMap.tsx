@@ -1,4 +1,6 @@
+"use client";
 import Script from 'next/script';
+import { useState } from 'react';
 
 export default function AbujaMap() {
   const mapQueryUrl = 'https://www.google.com/maps?q=Abuja%2C%20Nigeria';
@@ -21,6 +23,8 @@ export default function AbujaMap() {
     hasMap: mapQueryUrl
   };
 
+  const [showMap, setShowMap] = useState(false);
+
   return (
     <section aria-label="Map of Abuja" className="mt-12">
       <h2 className="text-xl font-semibold mb-3">Map of Abuja</h2>
@@ -29,15 +33,24 @@ export default function AbujaMap() {
         <a href={mapQueryUrl} target="_blank" rel="noopener" className="underline">view a larger map</a>.
       </p>
       <div className="relative w-full overflow-hidden rounded-lg border border-white/10 dark:border-white/10 bg-white/5 dark:bg-white/5 shadow">
-        <div className="relative h-64 sm:h-80 w-full">
-          <iframe
-            title="Google Map of Abuja, Nigeria"
-            src={embedUrl}
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-            className="absolute inset-0 h-full w-full"
-          />
-        </div>
+        {!showMap ? (
+          <div className="relative h-64 sm:h-80 w-full flex items-center justify-center">
+            <img src="/city park abuja.png" alt="Abuja map placeholder" className="absolute inset-0 h-full w-full object-cover" />
+            <div className="relative z-10">
+              <button type="button" onClick={() => setShowMap(true)} className="rounded-md bg-gradient-to-r from-brand-500 to-emerald-500 hover:from-brand-600 hover:to-emerald-600 text-white px-4 py-2 text-sm shadow-md">Load interactive map</button>
+            </div>
+          </div>
+        ) : (
+          <div className="relative h-64 sm:h-80 w-full">
+            <iframe
+              title="Google Map of Abuja, Nigeria"
+              src={embedUrl}
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              className="absolute inset-0 h-full w-full"
+            />
+          </div>
+        )}
       </div>
       <Script id="abuja-map-jsonld" type="application/ld+json" strategy="afterInteractive">
         {JSON.stringify(jsonLd)}
