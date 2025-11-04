@@ -79,7 +79,7 @@ What's your absolute favourite cafe in Abuja? Did we miss your personal hidden g
 ## About the Author
 Femi Adebayo is the Chief Food Critic and co-founder of Places in Abuja. As a long-time remote worker and coffee aficionado, he has personally tested dozens of cafes across the city, meticulously rating them on everything from Wi-Fi stability and outlet availability to the quality of their espresso. His mission is to provide the most authentic, reliable, and deeply researched guides for anyone looking to eat, drink, or work in the capital.
 
-## Frequently Asked Questions {#faq}
+<h2 id="faq">Frequently Asked Questions</h2>
 
 ### What is the best cafe for remote work in Abuja?
 The best cafes for remote work in Abuja are those with tested high-speed Wi-Fi, ample plug sockets, and a moderate noise level. Our guide identifies specific spots that are optimized for productivity, ensuring you can work without frustrating connection drops.
