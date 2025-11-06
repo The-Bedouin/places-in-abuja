@@ -52,7 +52,8 @@ const cardData: BentoCardProps[] = [
   {
     color: '#060010',
     label: 'Things to Do',
-    image: '/thingstododinabujacategorycover.png'
+    image: '/thingstododinabujacategorycover.png',
+    href: '/things-to-do'
   },
   {
     color: '#060010',
