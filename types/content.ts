@@ -5,6 +5,7 @@ export interface BlogPostFrontmatter {
   author?: string;
   image?: string;
   excerpt?: string;
+  canonical?: string;
   // Optional structured place info for schema.org enrichment
   place?: {
     type?: 'Place' | 'Restaurant' | 'TouristAttraction' | 'Park';

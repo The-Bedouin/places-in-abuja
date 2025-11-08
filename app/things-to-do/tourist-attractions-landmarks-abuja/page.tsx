@@ -20,11 +20,15 @@ export async function generateMetadata(): Promise<Metadata> {
 	return {
 		title: post.title,
 		description: post.excerpt,
+		alternates: {
+			canonical: post.canonical || 'https://www.placesinabuja.com/things-to-do/tourist-attractions-landmarks-abuja'
+		},
 		openGraph: {
 			title: post.title,
 			description: post.excerpt,
 			images: post.image ? [post.image] : [],
-			type: 'article'
+			type: 'article',
+			url: post.canonical || 'https://www.placesinabuja.com/things-to-do/tourist-attractions-landmarks-abuja'
 		}
 	};
 }
@@ -33,43 +37,43 @@ export default async function TouristAttractionsLandmarksPage() {
 	const post = await getPostBySlug('tourist-attractions-landmarks-abuja');
 	if (!post) return notFound();
 	
-	const baseUrl = 'https://placesinabuja.com';
+	const baseUrl = 'https://www.placesinabuja.com';
 
 	const SCHEMA_JSON = `{
 		"@context": "https://schema.org",
 		"@graph": [
 			{
 				"@type": "Organization",
-				"@id": "https://placesinabuja.com/#organization",
+				"@id": "https://www.placesinabuja.com/#organization",
 				"name": "Places in Abuja",
-				"url": "https://placesinabuja.com/"
+				"url": "https://www.placesinabuja.com/"
 			},
 			{
 				"@type": "Person",
-				"@id": "https://placesinabuja.com/about#the-bedouin",
+				"@id": "https://www.placesinabuja.com/about#the-bedouin",
 				"name": "The-Bedouin",
-				"url": "https://placesinabuja.com/about",
+				"url": "https://www.placesinabuja.com/about",
 				"jobTitle": "Founder",
 				"description": "The-Bedouin is the founder of Places in Abuja and a 25-year resident of the capital. He has personally hiked Zuma Rock, explored every corner of the Arts & Crafts Village, and believes the National Mosque is most beautiful at sunset.",
 				"worksFor": {
-					"@id": "https://placesinabuja.com/#organization"
+					"@id": "https://www.placesinabuja.com/#organization"
 				}
 			},
 			{
 				"@type": "BreadcrumbList",
-				"@id": "https://placesinabuja.com/things-to-do/tourist-attractions-landmarks-abuja#breadcrumb",
+				"@id": "https://www.placesinabuja.com/things-to-do/tourist-attractions-landmarks-abuja#breadcrumb",
 				"itemListElement": [
 					{
 						"@type": "ListItem",
 						"position": 1,
 						"name": "Home",
-						"item": "https://placesinabuja.com/"
+						"item": "https://www.placesinabuja.com/"
 					},
 					{
 						"@type": "ListItem",
 						"position": 2,
 						"name": "Things to Do",
-						"item": "https://placesinabuja.com/things-to-do"
+						"item": "https://www.placesinabuja.com/things-to-do"
 					},
 					{
 						"@type": "ListItem",
@@ -80,32 +84,32 @@ export default async function TouristAttractionsLandmarksPage() {
 			},
 			{
 				"@type": "BlogPosting",
-				"@id": "https://placesinabuja.com/things-to-do/tourist-attractions-landmarks-abuja#article",
+				"@id": "https://www.placesinabuja.com/things-to-do/tourist-attractions-landmarks-abuja#article",
 				"mainEntityOfPage": {
 					"@type": "WebPage",
-					"@id": "https://placesinabuja.com/things-to-do/tourist-attractions-landmarks-abuja"
+					"@id": "https://www.placesinabuja.com/things-to-do/tourist-attractions-landmarks-abuja"
 				},
 				"headline": "Must-See Tourist Attractions and Landmarks in Abuja (2025 Guide)",
 				"description": "Your essential guide to Abuja's most iconic landmarks and attractions—from the ancient power of Zuma Rock to the golden dome of the National Mosque.",
 				"datePublished": "2025-11-02T10:00:00+01:00",
 				"dateModified": "2025-11-02T10:00:00+01:00",
 				"author": {
-					"@id": "https://placesinabuja.com/about#the-bedouin"
+					"@id": "https://www.placesinabuja.com/about#the-bedouin"
 				},
 				"publisher": {
-					"@id": "https://placesinabuja.com/#organization"
+					"@id": "https://www.placesinabuja.com/#organization"
 				},
 				"mentions": [
-					{"@id": "https://placesinabuja.com/things-to-do/tourist-attractions-landmarks-abuja#zuma-rock"},
-					{"@id": "https://placesinabuja.com/things-to-do/tourist-attractions-landmarks-abuja#national-mosque"},
-					{"@id": "https://placesinabuja.com/things-to-do/tourist-attractions-landmarks-abuja#usuma-dam"},
-					{"@id": "https://placesinabuja.com/things-to-do/tourist-attractions-landmarks-abuja#yaradua-centre"},
-					{"@id": "https://placesinabuja.com/things-to-do/tourist-attractions-landmarks-abuja#magicland"}
+					{"@id": "https://www.placesinabuja.com/things-to-do/tourist-attractions-landmarks-abuja#zuma-rock"},
+					{"@id": "https://www.placesinabuja.com/things-to-do/tourist-attractions-landmarks-abuja#national-mosque"},
+					{"@id": "https://www.placesinabuja.com/things-to-do/tourist-attractions-landmarks-abuja#usuma-dam"},
+					{"@id": "https://www.placesinabuja.com/things-to-do/tourist-attractions-landmarks-abuja#yaradua-centre"},
+					{"@id": "https://www.placesinabuja.com/things-to-do/tourist-attractions-landmarks-abuja#magicland"}
 				]
 			},
 			{
 				"@type": "TouristAttraction",
-				"@id": "https://placesinabuja.com/things-to-do/tourist-attractions-landmarks-abuja#zuma-rock",
+				"@id": "https://www.placesinabuja.com/things-to-do/tourist-attractions-landmarks-abuja#zuma-rock",
 				"name": "Zuma Rock",
 				"description": "A towering 725-meter monolith and ancient guardian known as the 'Gateway to Abuja.' Featured on the 100 Naira note, it's a massive, watchful sentinel on the main road from Kaduna.",
 				"address": {
@@ -116,7 +120,7 @@ export default async function TouristAttractionsLandmarksPage() {
 			},
 			{
 				"@type": "PlaceOfWorship",
-				"@id": "https://placesinabuja.com/things-to-do/tourist-attractions-landmarks-abuja#national-mosque",
+				"@id": "https://www.placesinabuja.com/things-to-do/tourist-attractions-landmarks-abuja#national-mosque",
 				"name": "Abuja National Mosque",
 				"description": "The city's most defining architectural icon, known for its massive golden dome and four towering minarets. A symbol of unity and a breathtaking piece of modern Islamic architecture.",
 				"address": {
@@ -127,7 +131,7 @@ export default async function TouristAttractionsLandmarksPage() {
 			},
 			{
 				"@type": "TouristAttraction",
-				"@id": "https://placesinabuja.com/things-to-do/tourist-attractions-landmarks-abuja#usuma-dam",
+				"@id": "https://www.placesinabuja.com/things-to-do/tourist-attractions-landmarks-abuja#usuma-dam",
 				"name": "Usuma Dam",
 				"description": "A massive, beautiful reservoir located just outside the city proper, offering a sense of peace and stunning natural vistas. Perfect for picnics, nature walks, and boat rides.",
 				"address": {
@@ -138,7 +142,7 @@ export default async function TouristAttractionsLandmarksPage() {
 			},
 			{
 				"@type": "TouristAttraction",
-				"@id": "https://placesinabuja.com/things-to-do/tourist-attractions-landmarks-abuja#yaradua-centre",
+				"@id": "https://www.placesinabuja.com/things-to-do/tourist-attractions-landmarks-abuja#yaradua-centre",
 				"name": "Shehu Musa Yar'Adua Centre",
 				"description": "One of Abuja's most significant modern landmarks, featuring a museum, library, and foundation dedicated to the memory of the late Major General Shehu Musa Yar'Adua.",
 				"address": {
@@ -149,13 +153,13 @@ export default async function TouristAttractionsLandmarksPage() {
 			},
 			{
 				"@type": "Place",
-				"@id": "https://placesinabuja.com/things-to-do/tourist-attractions-landmarks-abuja#magicland",
+				"@id": "https://www.placesinabuja.com/things-to-do/tourist-attractions-landmarks-abuja#magicland",
 				"name": "Magicland Amusement Park",
 				"description": "Abuja's premier and most nostalgic theme park, known as 'Wondericland.' A colorful, sprawling park designed for families, featuring rollercoasters, rides, and arcade games."
 			},
 			{
 				"@type": "FAQPage",
-				"@id": "https://placesinabuja.com/things-to-do/tourist-attractions-landmarks-abuja#faq",
+				"@id": "https://www.placesinabuja.com/things-to-do/tourist-attractions-landmarks-abuja#faq",
 				"mainEntity": [
 					{
 						"@type": "Question",

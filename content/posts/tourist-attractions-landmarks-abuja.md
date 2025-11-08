@@ -5,7 +5,7 @@ tags: ["Things to Do", "Attractions", "Landmarks", "Tourist Attractions", "Abuja
 author: "The-Bedouin"
 publisher: "Places in Abuja"
 excerpt: "Your essential guide to Abuja's most iconic landmarks and attractions—from the ancient power of Zuma Rock to the golden dome of the National Mosque."
-canonical: "https://placesinabuja.com/things-to-do/tourist-attractions-landmarks-abuja"
+canonical: "https://www.placesinabuja.com/things-to-do/tourist-attractions-landmarks-abuja"
 ---
 
 [← Back to the Ultimate Guide to Things to Do in Abuja](/things-to-do)

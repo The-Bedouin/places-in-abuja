@@ -5,7 +5,7 @@ tags: ["Things to Do", "Activities", "Adventure", "Parks", "Sports", "Abuja Guid
 author: "The-Bedouin"
 publisher: "Places in Abuja"
 excerpt: "Your complete guide to Abuja's best activities and adventures—from game spots and arcades to parks, picnics, and sports facilities."
-canonical: "https://placesinabuja.com/things-to-do/activities-adventure-abuja"
+canonical: "https://www.placesinabuja.com/things-to-do/activities-adventure-abuja"
 ---
 
 [← Back to the Ultimate Guide to Things to Do in Abuja](/things-to-do)

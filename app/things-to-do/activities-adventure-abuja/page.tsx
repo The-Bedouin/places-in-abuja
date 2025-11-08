@@ -20,11 +20,15 @@ export async function generateMetadata(): Promise<Metadata> {
 	return {
 		title: post.title,
 		description: post.excerpt,
+		alternates: {
+			canonical: post.canonical || 'https://www.placesinabuja.com/things-to-do/activities-adventure-abuja'
+		},
 		openGraph: {
 			title: post.title,
 			description: post.excerpt,
 			images: post.image ? [post.image] : [],
-			type: 'article'
+			type: 'article',
+			url: post.canonical || 'https://www.placesinabuja.com/things-to-do/activities-adventure-abuja'
 		}
 	};
 }
@@ -33,43 +37,43 @@ export default async function ActivitiesAdventurePage() {
 	const post = await getPostBySlug('activities-adventure-abuja');
 	if (!post) return notFound();
 	
-	const baseUrl = 'https://placesinabuja.com';
+	const baseUrl = 'https://www.placesinabuja.com';
 
 	const SCHEMA_JSON = `{
 		"@context": "https://schema.org",
 		"@graph": [
 			{
 				"@type": "Organization",
-				"@id": "https://placesinabuja.com/#organization",
+				"@id": "https://www.placesinabuja.com/#organization",
 				"name": "Places in Abuja",
-				"url": "https://placesinabuja.com/"
+				"url": "https://www.placesinabuja.com/"
 			},
 			{
 				"@type": "Person",
-				"@id": "https://placesinabuja.com/about#the-bedouin",
+				"@id": "https://www.placesinabuja.com/about#the-bedouin",
 				"name": "The-Bedouin",
-				"url": "https://placesinabuja.com/about",
+				"url": "https://www.placesinabuja.com/about",
 				"jobTitle": "Founder",
 				"description": "The-Bedouin is the founder of Places in Abuja and a 25-year resident of the capital. He has personally hiked the trails of Aso Rock, tested nearly every game spot in Wuse 2, and believes Millennium Park is the city's greatest treasure.",
 				"worksFor": {
-					"@id": "https://placesinabuja.com/#organization"
+					"@id": "https://www.placesinabuja.com/#organization"
 				}
 			},
 			{
 				"@type": "BreadcrumbList",
-				"@id": "https://placesinabuja.com/things-to-do/activities-adventure-abuja#breadcrumb",
+				"@id": "https://www.placesinabuja.com/things-to-do/activities-adventure-abuja#breadcrumb",
 				"itemListElement": [
 					{
 						"@type": "ListItem",
 						"position": 1,
 						"name": "Home",
-						"item": "https://placesinabuja.com/"
+						"item": "https://www.placesinabuja.com/"
 					},
 					{
 						"@type": "ListItem",
 						"position": 2,
 						"name": "Things to Do",
-						"item": "https://placesinabuja.com/things-to-do"
+						"item": "https://www.placesinabuja.com/things-to-do"
 					},
 					{
 						"@type": "ListItem",
@@ -80,32 +84,32 @@ export default async function ActivitiesAdventurePage() {
 			},
 			{
 				"@type": "BlogPosting",
-				"@id": "https://placesinabuja.com/things-to-do/activities-adventure-abuja#article",
+				"@id": "https://www.placesinabuja.com/things-to-do/activities-adventure-abuja#article",
 				"mainEntityOfPage": {
 					"@type": "WebPage",
-					"@id": "https://placesinabuja.com/things-to-do/activities-adventure-abuja"
+					"@id": "https://www.placesinabuja.com/things-to-do/activities-adventure-abuja"
 				},
 				"headline": "The Ultimate Guide to Activities & Adventure in Abuja (2025)",
 				"description": "Your complete guide to Abuja's best activities and adventures—from game spots and arcades to parks, picnics, and sports facilities.",
 				"datePublished": "2025-11-02T10:00:00+01:00",
 				"dateModified": "2025-11-02T10:00:00+01:00",
 				"author": {
-					"@id": "https://placesinabuja.com/about#the-bedouin"
+					"@id": "https://www.placesinabuja.com/about#the-bedouin"
 				},
 				"publisher": {
-					"@id": "https://placesinabuja.com/#organization"
+					"@id": "https://www.placesinabuja.com/#organization"
 				},
 				"mentions": [
-					{"@id": "https://placesinabuja.com/things-to-do/activities-adventure-abuja#millennium-park"},
-					{"@id": "https://placesinabuja.com/things-to-do/activities-adventure-abuja#city-park"},
-					{"@id": "https://placesinabuja.com/things-to-do/activities-adventure-abuja#monaliza"},
-					{"@id": "https://placesinabuja.com/things-to-do/activities-adventure-abuja#jabi-lake"},
-					{"@id": "https://placesinabuja.com/things-to-do/activities-adventure-abuja#wuse-2"}
+					{"@id": "https://www.placesinabuja.com/things-to-do/activities-adventure-abuja#millennium-park"},
+					{"@id": "https://www.placesinabuja.com/things-to-do/activities-adventure-abuja#city-park"},
+					{"@id": "https://www.placesinabuja.com/things-to-do/activities-adventure-abuja#monaliza"},
+					{"@id": "https://www.placesinabuja.com/things-to-do/activities-adventure-abuja#jabi-lake"},
+					{"@id": "https://www.placesinabuja.com/things-to-do/activities-adventure-abuja#wuse-2"}
 				]
 			},
 			{
 				"@type": "Park",
-				"@id": "https://placesinabuja.com/things-to-do/activities-adventure-abuja#millennium-park",
+				"@id": "https://www.placesinabuja.com/things-to-do/activities-adventure-abuja#millennium-park",
 				"name": "Millennium Park",
 				"description": "A sprawling, beautifully manicured park that is Abuja's go-to for family outings and lazy Sunday afternoons.",
 				"address": {
@@ -116,7 +120,7 @@ export default async function ActivitiesAdventurePage() {
 			},
 			{
 				"@type": "Park",
-				"@id": "https://placesinabuja.com/things-to-do/activities-adventure-abuja#city-park",
+				"@id": "https://www.placesinabuja.com/things-to-do/activities-adventure-abuja#city-park",
 				"name": "City Park",
 				"description": "One of the true pioneers in Abuja's social and recreation scene, known for its lively atmosphere, football fields, and fantastic grilled fish.",
 				"address": {
@@ -127,7 +131,7 @@ export default async function ActivitiesAdventurePage() {
 			},
 			{
 				"@type": "TouristAttraction",
-				"@id": "https://placesinabuja.com/things-to-do/activities-adventure-abuja#monaliza",
+				"@id": "https://www.placesinabuja.com/things-to-do/activities-adventure-abuja#monaliza",
 				"name": "Monaliza",
 				"description": "A sprawling center that blends green space with sporting facilities including jogging tracks, tennis courts, football fields, and horse riding. Famous for its large 'I Love Abuja' sign.",
 				"address": {
@@ -138,7 +142,7 @@ export default async function ActivitiesAdventurePage() {
 			},
 			{
 				"@type": "Park",
-				"@id": "https://placesinabuja.com/things-to-do/activities-adventure-abuja#jabi-lake",
+				"@id": "https://www.placesinabuja.com/things-to-do/activities-adventure-abuja#jabi-lake",
 				"name": "Jabi Lake Park",
 				"description": "Abuja's waterfront offering a unique blend of nature and activity, featuring boat rides, jogging paths, and waterside cafes.",
 				"address": {
@@ -149,13 +153,13 @@ export default async function ActivitiesAdventurePage() {
 			},
 			{
 				"@type": "Place",
-				"@id": "https://placesinabuja.com/things-to-do/activities-adventure-abuja#wuse-2",
+				"@id": "https://www.placesinabuja.com/things-to-do/activities-adventure-abuja#wuse-2",
 				"name": "Wuse 2",
 				"description": "The vibrant hub of Abuja's game center scene, home to modern arcades, bowling alleys, VR experiences, and paintball arenas perfect for date nights and group hangouts."
 			},
 			{
 				"@type": "FAQPage",
-				"@id": "https://placesinabuja.com/things-to-do/activities-adventure-abuja#faq",
+				"@id": "https://www.placesinabuja.com/things-to-do/activities-adventure-abuja#faq",
 				"mainEntity": [
 					{
 						"@type": "Question",
