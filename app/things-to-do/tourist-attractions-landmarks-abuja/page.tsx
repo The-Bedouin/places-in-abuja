@@ -148,15 +148,10 @@ export default async function TouristAttractionsLandmarksPage() {
 				}
 			},
 			{
-				"@type": "AmusementPark",
+				"@type": "Place",
 				"@id": "https://placesinabuja.com/things-to-do/tourist-attractions-landmarks-abuja#magicland",
 				"name": "Magicland Amusement Park",
-				"description": "Abuja's premier and most nostalgic theme park, known as 'Wondericland.' A colorful, sprawling park designed for families, featuring rollercoasters, rides, and arcade games.",
-				"address": {
-					"@type": "PostalAddress",
-					"addressLocality": "Abuja",
-					"addressRegion": "Abuja"
-				}
+				"description": "Abuja's premier and most nostalgic theme park, known as 'Wondericland.' A colorful, sprawling park designed for families, featuring rollercoasters, rides, and arcade games."
 			},
 			{
 				"@type": "FAQPage",

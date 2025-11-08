@@ -76,7 +76,7 @@ National museums are also upping their game, offering deeper dives into the nati
 
 Whether you're a serious art collector looking for the next big thing or just want to absorb the local culture, we've found the city's creative heart.
 
-See our top picks in the [Complete Guide to Arts & Culture in Abuja].
+See our top picks in the [Complete Guide to Arts & Culture in Abuja](/things-to-do/arts-culture-abuja).
 
 ## From Malls to Markets: A Shopper's Guide
 
@@ -96,7 +96,7 @@ We're talking fresh produce, electronics, designer fabrics, traditional crafts, 
 
 Understanding this contrast is the secret to shopping in Abuja. You go to the malls for brands and comfort; you go to the markets for bargains, culture, and an unforgettable experience.
 
-From a luxury splurge to a local bargain hunt, plan your perfect shopping day with our [Ultimate Abuja Shopping Guide].
+From a luxury splurge to a local bargain hunt, plan your perfect shopping day with our [Ultimate Abuja Shopping Guide](/things-to-do/shopping-abuja).
 
 ## Relax & Recharge: Spas and Wellness in Abuja
 
@@ -114,7 +114,7 @@ For a different kind of purification, you can also indulge in a traditional hamm
 
 These places are more than just pretty rooms; they are purposeful oases designed to provide a much-needed escape from the city's hustle. They are where you go to silence the noise, recharge your mind, and restore your body.
 
-It's time to unwind. We've reviewed the most tranquil oases in the city. Find your perfect escape in our [Guide to the Best Spas in Abuja for Relaxation].
+It's time to unwind. We've reviewed the most tranquil oases in the city. Find your perfect escape in our [Guide to the Best Spas in Abuja for Relaxation](/things-to-do/spas-wellness-abuja).
 
 ## Your Adventure Awaits
 
