@@ -39,32 +39,56 @@ export default async function ThingsToDoPage() {
 		"@context": "https://schema.org",
 		"@graph": [
 			{
+				"@type": "Organization",
+				"@id": "https://placesinabuja.com/#organization",
+				"name": "Places in Abuja",
+				"url": "https://placesinabuja.com/",
+				"logo": {
+					"@type": "ImageObject",
+					"url": "https://placesinabuja.com/logo.svg"
+				}
+			},
+			{
+				"@type": "Person",
+				"@id": "https://placesinabuja.com/about#the-bedouin",
+				"name": "The-Bedouin",
+				"url": "https://placesinabuja.com/about",
+				"jobTitle": "Founder",
+				"description": "The-Bedouin is the founder of Places in Abuja and a 25-year resident of the capital. He has personally hiked the trails of Aso Rock, navigated every corner of Wuse Market, and believes Millennium Park is the city's greatest treasure.",
+				"worksFor": {
+					"@id": "https://placesinabuja.com/#organization"
+				}
+			},
+			{
+				"@type": "WebSite",
+				"@id": "https://placesinabuja.com/#website",
+				"url": "https://placesinabuja.com/",
+				"name": "Places in Abuja",
+				"publisher": {
+					"@id": "https://placesinabuja.com/#organization"
+				}
+			},
+			{
 				"@type": "Article",
 				"@id": "https://placesinabuja.com/things-to-do#article",
 				"headline": "The Ultimate Guide to Things to Do in Abuja (2025)",
 				"datePublished": "2025-11-01T15:41:00+01:00",
 				"dateModified": "2025-11-01T15:41:00+01:00",
 				"author": {
-					"@type": "Person",
-					"@id": "https://placesinabuja.com/about#the-bedouin",
-					"name": "The-Bedouin",
-					"url": "https://placesinabuja.com/about",
-					"description": "Founder of Places in Abuja and a 25-year resident of the capital, dedicated to showing visitors and residents the hidden gems of the FCT."
+					"@id": "https://placesinabuja.com/about#the-bedouin"
 				},
 				"publisher": {
-					"@type": "Organization",
-					"@id": "https://placesinabuja.com/#organization",
-					"name": "Places in Abuja",
-					"url": "https://placesinabuja.com",
-					"logo": {
-						"@type": "ImageObject",
-						"url": "https://placesinabuja.com/logo.svg"
-					}
+					"@id": "https://placesinabuja.com/#organization"
 				},
 				"mainEntityOfPage": {
 					"@id": "https://placesinabuja.com/things-to-do"
 				},
 				"description": "The ultimate guide to the best things to do in Abuja (2025). Discover iconic landmarks, fun activities, parks, game centers, art, culture, shopping, and spas.",
+				"image": [
+					"https://placesinabuja.com/apictureofhorseridingaspartofthingstodoinabuja.png",
+					"https://placesinabuja.com/apictureofapopularlandmarkinabujathenationalcentralmosque.png",
+					"https://placesinabuja.com/pictureofladiqualithewokmanatthebackof20nairanoteshowingabujasartandcukturescene.png"
+				],
 				"mentions": [
 					{ "@id": "https://placesinabuja.com/things-to-do#zuma-rock" },
 					{ "@id": "https://placesinabuja.com/things-to-do#national-mosque" },
@@ -118,32 +142,77 @@ export default async function ThingsToDoPage() {
 			{
 				"@type": "TouristAttraction",
 				"@id": "https://placesinabuja.com/things-to-do#zuma-rock",
-				"name": "Zuma Rock"
+				"name": "Zuma Rock",
+				"description": "A massive monolith that stands as the imposing, watchful gateway to Abuja. One of Nigeria's most recognizable natural landmarks.",
+				"address": {
+					"@type": "PostalAddress",
+					"addressLocality": "Madalla",
+					"addressRegion": "Niger State",
+					"addressCountry": "NG"
+				}
 			},
 			{
 				"@type": "PlaceOfWorship",
 				"@id": "https://placesinabuja.com/things-to-do#national-mosque",
-				"name": "Abuja National Mosque"
+				"name": "Abuja National Mosque",
+				"description": "The glistening golden dome of the National Mosque is a breathtaking sight, especially against the setting sun. A symbol of faith and unity visible from all over the city.",
+				"address": {
+					"@type": "PostalAddress",
+					"addressLocality": "Abuja",
+					"addressRegion": "FCT",
+					"addressCountry": "NG"
+				}
 			},
 			{
 				"@type": "PlaceOfWorship",
 				"@id": "https://placesinabuja.com/things-to-do#national-church",
-				"name": "National Ecumenical Centre (National Church)"
+				"name": "National Ecumenical Centre (National Church)",
+				"description": "The National Ecumenical Centre soars into the sky, creating a powerful dialogue of faith and unity visible from all over Abuja.",
+				"address": {
+					"@type": "PostalAddress",
+					"addressLocality": "Abuja",
+					"addressRegion": "FCT",
+					"addressCountry": "NG"
+				}
 			},
 			{
 				"@type": "TouristAttraction",
 				"@id": "https://placesinabuja.com/things-to-do#arts-crafts-village",
-				"name": "Abuja Arts & Crafts Village"
+				"name": "Abuja Arts & Crafts Village",
+				"description": "A vibrant cultural hub where you can connect with tradition, hold handcrafted leatherwork, admire intricate wood carvings, and barter for hand-woven fabrics.",
+				"address": {
+					"@type": "PostalAddress",
+					"addressLocality": "Abuja",
+					"addressRegion": "FCT",
+					"addressCountry": "NG"
+				}
 			},
 			{
 				"@type": "Park",
 				"@id": "https://placesinabuja.com/things-to-do#millennium-park",
-				"name": "Millennium Park"
+				"name": "Millennium Park",
+				"description": "Abuja's largest and most beautiful park, featuring beautifully manicured lawns perfect for picnics, walks, and family outings.",
+				"address": {
+					"@type": "PostalAddress",
+					"addressLocality": "Abuja",
+					"addressRegion": "FCT",
+					"addressCountry": "NG"
+				},
+				"containedInPlace": {
+					"@id": "https://placesinabuja.com/guide/neighborhoods/maitama#place"
+				}
 			},
 			{
 				"@type": "Park",
 				"@id": "https://placesinabuja.com/things-to-do#jabi-lake",
 				"name": "Jabi Lake Park",
+				"description": "A modern, scenic park with a beautiful lake, perfect for boat rides, peaceful walks, and family-friendly activities.",
+				"address": {
+					"@type": "PostalAddress",
+					"addressLocality": "Jabi",
+					"addressRegion": "FCT",
+					"addressCountry": "NG"
+				},
 				"containedInPlace": {
 					"@id": "https://placesinabuja.com/guide/neighborhoods/jabi#place"
 				}
@@ -152,6 +221,13 @@ export default async function ThingsToDoPage() {
 				"@type": "Market",
 				"@id": "https://placesinabuja.com/things-to-do#wuse-market",
 				"name": "Wuse Market",
+				"description": "The undisputed king of Abuja's commerce, a sprawling, energetic maze where you can find literally anything - from fresh produce and electronics to designer fabrics and traditional crafts.",
+				"address": {
+					"@type": "PostalAddress",
+					"addressLocality": "Wuse 2",
+					"addressRegion": "FCT",
+					"addressCountry": "NG"
+				},
 				"containedInPlace": {
 					"@id": "https://placesinabuja.com/guide/neighborhoods/wuse-2#place"
 				}
@@ -160,6 +236,13 @@ export default async function ThingsToDoPage() {
 				"@type": "ShoppingCenter",
 				"@id": "https://placesinabuja.com/things-to-do#jabi-lake-mall",
 				"name": "Jabi Lake Mall",
+				"description": "A modern shopping mall offering international retail brands, a cinema, and waterfront restaurants. The city's new social center perfect for family days out.",
+				"address": {
+					"@type": "PostalAddress",
+					"addressLocality": "Jabi",
+					"addressRegion": "FCT",
+					"addressCountry": "NG"
+				},
 				"containedInPlace": {
 					"@id": "https://placesinabuja.com/guide/neighborhoods/jabi#place"
 				}
@@ -173,17 +256,38 @@ export default async function ThingsToDoPage() {
 			{
 				"@type": "Place",
 				"@id": "https://placesinabuja.com/guide/neighborhoods/wuse-2#place",
-				"name": "Wuse 2, Abuja"
+				"name": "Wuse 2, Abuja",
+				"description": "The vibrant, beating heart of Abuja's dining and entertainment scene, with a high density of trendy restaurants, game centers, and nightlife.",
+				"address": {
+					"@type": "PostalAddress",
+					"addressLocality": "Wuse 2",
+					"addressRegion": "FCT",
+					"addressCountry": "NG"
+				}
 			},
 			{
 				"@type": "Place",
 				"@id": "https://placesinabuja.com/guide/neighborhoods/maitama#place",
-				"name": "Maitama, Abuja"
+				"name": "Maitama, Abuja",
+				"description": "An upscale district known for luxurious restaurants, high-end galleries, and sophisticated establishments, perfect for fine dining and cultural experiences.",
+				"address": {
+					"@type": "PostalAddress",
+					"addressLocality": "Maitama",
+					"addressRegion": "FCT",
+					"addressCountry": "NG"
+				}
 			},
 			{
 				"@type": "Place",
 				"@id": "https://placesinabuja.com/guide/neighborhoods/jabi#place",
-				"name": "Jabi, Abuja"
+				"name": "Jabi, Abuja",
+				"description": "A modern, scenic area known for relaxed, family-friendly dining, beautiful waterfront restaurants, and the popular Jabi Lake Mall.",
+				"address": {
+					"@type": "PostalAddress",
+					"addressLocality": "Jabi",
+					"addressRegion": "FCT",
+					"addressCountry": "NG"
+				}
 			},
 			{
 				"@type": "FAQPage",

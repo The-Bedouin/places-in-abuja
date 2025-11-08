@@ -38,7 +38,7 @@ Finally, there are the cultural hubs. These are the landmarks that capture the c
 
 Seeing these places on a screen is one thing, but experiencing them in person is another. From our team's numerous visits, we've learned that each landmark has its own story, its own rules for visiting, and its own best-kept secrets. We've explored every major landmark to create a complete visitor's guide.
 
-For details on visiting hours, history, and the best photo spots, see our [Ultimate Guide to the Must-See Attractions in Abuja].
+For details on visiting hours, history, and the best photo spots, see our [Must-See Tourist Attractions and Landmarks in Abuja](/things-to-do/tourist-attractions-landmarks-abuja).
 
 ## Adventure & Activities: From Parks to Paintball
 
@@ -56,7 +56,7 @@ Later, you could be at Jabi Lake, enjoying a boat ride or just a peaceful walk a
 
 It's this sheer variety that makes Abuja special. You can truly choose your own adventure. Ready to plan yours? Our complete guide features the best parks, game spots, hiking trails, and more.
 
-Check out our [Complete Guide to Activities & Adventure in Abuja].
+Check out our [Complete Guide to Activities & Adventure in Abuja](/things-to-do/activities-adventure-abuja).
 
 ## The City's Soul: Abuja's Arts & Culture Scene
 
