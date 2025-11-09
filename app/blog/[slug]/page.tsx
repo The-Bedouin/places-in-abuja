@@ -290,6 +290,12 @@ export default async function PostPage({ params }: Props) {
        {/* Center content */}
        <main className={`${hasToc ? 'md:col-span-12 lg:col-span-7' : 'md:col-span-12 lg:col-span-9'}`}>
         <div className="mx-auto w-full max-w-3xl">
+          <div className="mb-4">
+            <Link href="/blog" className="inline-flex items-center gap-2 text-sm text-gray-700 dark:text-gray-300 hover:underline">
+              <span aria-hidden>←</span>
+              <span>Back</span>
+            </Link>
+          </div>
           <article id="article-content" className="prose dark:prose-invert max-w-none">
             <h1>{post.title}</h1>
             {post.image && (

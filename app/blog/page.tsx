@@ -17,6 +17,12 @@ export default async function BlogIndex({ searchParams }: { searchParams: Record
 
   return (
     <div>
+      <div className="mb-4">
+        <Link href="/" className="inline-flex items-center gap-2 text-sm text-gray-700 dark:text-gray-300 hover:underline">
+          <span aria-hidden>←</span>
+          <span>Back</span>
+        </Link>
+      </div>
       <div className="flex items-center justify-between gap-4">
         <h1 className="text-2xl font-bold">All Posts</h1>
         <form className="ml-auto">

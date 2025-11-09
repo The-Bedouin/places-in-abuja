@@ -61,8 +61,9 @@ const cardData: BentoCardProps[] = [
   },
   {
     color: '#060010',
-    label: '',
-    image: '/abujaguidecategorycover.png'
+    label: 'Abuja Guide',
+    image: '/abujaguidecategorycover.png',
+    href: '/abuja-guide'
   }
 ];
 
