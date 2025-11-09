@@ -49,7 +49,7 @@ But Abuja isn't just these two extremes. You have sprawling, family-friendly res
 
 Then there's Garki, an older, more established district that houses many government buildings and offers a practical, central base. And let's not forget Jabi, which has become a lifestyle destination in its own right, centered around the recreational hub of Jabi Lake and its popular mall.
 
-Choosing your base is the most important decision you'll make. For a complete breakdown of the pros, cons, costs, and unique character of each area, see our [Complete Guide: Where to Live in Abuja](/things-to-do/where-to-live-abuja).
+Choosing your base is the most important decision you'll make. For a complete breakdown of the pros, cons, costs, and unique character of each area, see our [Complete Guide: Where to Live in Abuja](/abuja-guide#neighborhoods).
 
 ## Finding Your Perfect Stay: Hotels & Accommodation in Abuja
 
@@ -67,7 +67,7 @@ These apartments, especially in Jabi and Wuse 2, provide kitchens, living spaces
 
 Of course, not every stay demands a five-star budget. For those seeking reliability and value, Abuja has a robust network of affordable hotels and guesthouses, particularly in central districts like Garki.
 
-Whether you're here for a weekend conference or a six-month contract, we've reviewed the top hotels, apartments, and guesthouses. Find your perfect base in our [Ultimate Guide to the Best Hotels in Abuja](/things-to-do/best-hotels-abuja).
+Whether you're here for a weekend conference or a six-month contract, we've reviewed the top hotels, apartments, and guesthouses. Find your perfect base in our [Ultimate Guide to the Best Hotels in Abuja](/abuja-guide#accommodation).
 
 ## Getting Around Abuja: A Complete Transport Guide
 
@@ -92,7 +92,7 @@ Using the green cabs is a key local skill. Unlike ride-sharing apps, there is no
 3. **Step 3**: Politely counter with a lower, reasonable price (locals usually have a set price in their head).
 4. **Step 4**: After a brief, friendly haggle, you will agree on a fare. Confirm the price one last time (e.g., "So, 2000 Naira to Jabi?") before getting in.
 
-Don't let navigating a new city intimidate you. For detailed tips on airport travel, ride-sharing costs, and moving around like a local, read our [Complete Guide to Getting Around Abuja](/things-to-do/getting-around-abuja).
+Don't let navigating a new city intimidate you. For detailed tips on airport travel, ride-sharing costs, and moving around like a local, read our [Complete Guide to Getting Around Abuja](/abuja-guide#transport).
 
 ## Abuja Essentials: A Practical Guide for Residents & Visitors
 
@@ -131,7 +131,7 @@ Popular choices include:
 
 As for other practicalities, daily life is well-supported. Shopping is a blend of modern malls (like Jabi Lake Mall), large plazas, and bustling traditional markets (like the famous Wuse Market). Banking is modern and accessible, with all major Nigerian banks having a strong presence.
 
-We've gathered all the on-the-ground facts you need. For detailed guides on security, the best hospitals, and top international schools, explore our [Abuja Practicalities: A Guide to Safety, Health, and Schools](/things-to-do/abuja-essential-info).
+We've gathered all the on-the-ground facts you need. For detailed guides on security, the best hospitals, and top international schools, explore our [Abuja Practicalities: A Guide to Safety, Health, and Schools](/abuja-guide#essential-info).
 
 ## Frequently Asked Questions About Abuja
 
