@@ -8,7 +8,7 @@ export default function PostCard({ post, featured: _featured = false }: { post: 
       <Link href={`/blog/${post.slug}`} className="block">
         <div className="relative aspect-[3/4] overflow-hidden">
           <Image
-            src={post.image || '/placeholder.jpg'}
+            src={post.image || '/iloveabujasign.png'}
             alt={post.title}
             fill
             className="object-cover"

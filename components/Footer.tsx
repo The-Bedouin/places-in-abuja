@@ -26,18 +26,13 @@ export default function Footer() {
           </ul>
         </div>
 
-        {/* Contribute */}
+        {/* Legal */}
         <div>
-          <h4 className="font-semibold tracking-tight">Contribute</h4>
+          <h4 className="font-semibold tracking-tight">Legal</h4>
           <ul className="mt-3 space-y-2 text-sm text-gray-700 dark:text-gray-300">
-            <li>
-              <a
-                href="mailto:placesinabuja@gmail.com?subject=Write%20for%20Places%20in%20Abuja"
-                className="hover:text-brand-600"
-              >
-                Write for us
-              </a>
-            </li>
+            <li><Link href="/privacy" className="hover:text-brand-600">Privacy Policy</Link></li>
+            <li><Link href="/terms" className="hover:text-brand-600">Terms & Conditions</Link></li>
+            <li><Link href="/disclaimer" className="hover:text-brand-600">Disclaimer</Link></li>
           </ul>
         </div>
 

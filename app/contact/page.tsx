@@ -33,7 +33,7 @@ export default function ContactPage() {
         <button disabled={isSubmitting} className="rounded-md bg-brand-600 text-white px-4 py-2">
           {isSubmitting ? 'Sending…' : 'Send'}
         </button>
-        {isSubmitSuccessful && <p className="text-sm text-green-600">Thanks! We7ll reply soon.</p>}
+        {isSubmitSuccessful && <p className="text-sm text-green-600">Thanks! We'll reply soon.</p>}
       </form>
     </section>
   );

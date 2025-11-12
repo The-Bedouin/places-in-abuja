@@ -321,22 +321,13 @@ export default async function PostPage({ params }: Props) {
                 <article key={p.slug} className="group rounded-lg overflow-hidden backdrop-blur-[1px] bg-white/5 dark:bg-white/5 border border-white/10 dark:border-white/10 hover:border-2 hover:border-green-500 dark:hover:border-green-500 shadow-md hover:shadow-lg transition-all duration-300">
                   <Link href={`/blog/${p.slug}`} className="block">
                     <div className="relative aspect-[3/4] overflow-hidden">
-                      {p.image ? (
-                        <Image
-                          src={p.image}
-                          alt={p.title}
-                          fill
-                          className="object-cover"
-                          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 50vw"
-                        />
-                      ) : (
-                        <img
-                          src="/placeholder.jpg"
-                          alt={p.title}
-                          className="absolute inset-0 h-full w-full object-cover"
-                          loading="lazy"
-                        />
-                      )}
+                      <Image
+                        src={p.image || '/iloveabujasign.png'}
+                        alt={p.title}
+                        fill
+                        className="object-cover"
+                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 50vw"
+                      />
                       <div className="absolute inset-0 pointer-events-none bg-white/10 dark:bg-black/20 backdrop-blur-[1px]" />
                       <div className="absolute -inset-y-10 -left-1/3 w-2/3 rotate-12 pointer-events-none 
                                       bg-gradient-to-r from-transparent via-white/30 to-transparent 
