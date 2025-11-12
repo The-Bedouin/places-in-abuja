@@ -6,7 +6,7 @@ export default function PrivacyPage() {
 			<h1>Privacy Policy</h1>
 			<p><strong>Effective Date:</strong> November 3, 2025</p>
 			<p>
-				Places in Abuja ("we", "us", "our") is committed to protecting your privacy. This Privacy Policy explains what information we collect, how we use it, and your choices.
+				Places in Abuja (&quot;we&quot;, &quot;us&quot;, &quot;our&quot;) is committed to protecting your privacy. This Privacy Policy explains what information we collect, how we use it, and your choices.
 			</p>
 
 			<h2>Information We Collect</h2>

@@ -8,7 +8,7 @@ export default function TermsPage() {
 
 			<h2>1. Acceptance of Terms</h2>
 			<p>
-				By accessing or using Places in Abuja (the "Site"), you agree to these Terms &amp; Conditions and our Privacy Policy. If you do not agree, please do not use the Site.
+				By accessing or using Places in Abuja (the &quot;Site&quot;), you agree to these Terms &amp; Conditions and our Privacy Policy. If you do not agree, please do not use the Site.
 			</p>
 
 			<h2>2. Use of the Site</h2>
@@ -29,7 +29,7 @@ export default function TermsPage() {
 
 			<h2>5. Disclaimer of Warranties</h2>
 			<p>
-				The Site and its content are provided on an "as is" and "as available" basis without warranties of any kind, express or implied, including but not limited to fitness for a particular purpose, accuracy, or non-infringement.
+				The Site and its content are provided on an &quot;as is&quot; and &quot;as available&quot; basis without warranties of any kind, express or implied, including but not limited to fitness for a particular purpose, accuracy, or non-infringement.
 			</p>
 
 			<h2>6. Limitation of Liability</h2>
