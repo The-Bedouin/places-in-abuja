@@ -211,6 +211,132 @@ const BAKERY_GUIDE_SCHEMA = `{
   ]
 }`;
 
+const BREAD_GUIDE_SCHEMA = `{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://placesinabuja.com/#organization",
+      "name": "Places in Abuja",
+      "url": "https://placesinabuja.com/"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://placesinabuja.com/author/femi-adebayo/#person",
+      "name": "Femi Adebayo",
+      "jobTitle": "Chief Food Critic",
+      "worksFor": { "@id": "https://placesinabuja.com/#organization" }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://placesinabuja.com/best-fresh-bread-abuja#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://placesinabuja.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Eat & Drink",
+          "item": "https://placesinabuja.com/blog/food-drink-abuja"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Bakery Guide",
+          "item": "https://placesinabuja.com/blog/bakery-guide-abuja"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Best Fresh Bread in Abuja"
+          "item": "https://placesinabuja.com/best-fresh-bread-abuja"
+        }
+      ]
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://placesinabuja.com/best-fresh-bread-abuja#article",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://placesinabuja.com/best-fresh-bread-abuja"
+      },
+      "headline": "Our Guide to the Best Fresh Bread in Abuja (2025)",
+      "description": "From New Wave artisanal spots to legendary family loaves, this is your definitive guide to the best bread in Abuja.",
+      "image": "https://placesinabuja.com/oak-bread.png",
+      "datePublished": "2025-11-21T09:00:00+01:00",
+      "dateModified": "2025-11-21T09:00:00+01:00",
+      "author": { "@id": "https://placesinabuja.com/author/femi-adebayo/#person" },
+      "publisher": { "@id": "https://placesinabuja.com/#organization" },
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": ["#frequently-asked-questions", ".prose h3"]
+      },
+      "about": [
+        { "@type": "Thing", "name": "Bread", "@id": "https://en.wikipedia.org/wiki/Bread" },
+        { "@type": "Place", "name": "Abuja", "@id": "https://en.wikipedia.org/wiki/Abuja" }
+      ],
+      "mentions": [
+        {
+            "@type": "Bakery",
+            "name": "Nada Bake House",
+            "address": { "@type": "PostalAddress", "addressLocality": "Wuse 2", "addressRegion": "Abuja" },
+            "sameAs": "https://share.google/xS1y6USruuIE09NNO"
+        },
+        {
+            "@type": "Bakery",
+            "name": "Dunes Center Bakery",
+            "address": { "@type": "PostalAddress", "addressLocality": "Maitama", "addressRegion": "Abuja" },
+            "sameAs": "https://share.google/3XkDaLDvcjG6GQXJI"
+        },
+        {
+            "@type": "Store",
+            "name": "Dalema Supermarket and Pastry",
+            "address": { "@type": "PostalAddress", "addressLocality": "Maitama", "addressRegion": "Abuja" },
+            "sameAs": "https://share.google/zN03QtOGRsCEql1z2"
+        },
+        {
+            "@type": "Bakery",
+            "name": "Oak Bread (Old English)",
+            "address": { "@type": "PostalAddress", "addressLocality": "Gwarimpa", "addressRegion": "Abuja" },
+            "sameAs": "https://share.google/N6C9ibiVl3lEV1zl2"
+        },
+        {
+            "@type": "Store",
+            "name": "H-Medix Pharmacy & Bakery",
+            "address": { "@type": "PostalAddress", "addressLocality": "Wuse 2", "addressRegion": "Abuja" },
+            "sameAs": "https://share.google/zl9zge8PtC4uHI2DA"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://placesinabuja.com/best-fresh-bread-abuja#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Where can I get fresh sourdough bread in Abuja?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For fresh artisanal and sourdough bread, we highly recommend Nada Bake House in Wuse 2. They specialize in European-style baking with excellent thermal freshness."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the best bread for families in Abuja?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The 'Old English' loaf from Oak Bread in Gwarimpa is the top choice for families. It is known for its structural strength and ability to hold butter without tearing."
+          }
+        }
+      ]
+    }
+  ]
+}`;
+
 const CAFE_GUIDE_SCHEMA = `{
   "@context": "https://schema.org",
   "@graph": [
@@ -262,6 +388,12 @@ export default async function PostPage({ params }: Props) {
       {params.slug === "bakery-guide-abuja" && (
         <Script id="bakery-guide-graph" type="application/ld+json" strategy="afterInteractive">
           {BAKERY_GUIDE_SCHEMA}
+        </Script>
+      )}
+
+      {params.slug === "best-fresh-bread-abuja" && (
+        <Script id="bread-guide-graph" type="application/ld+json" strategy="afterInteractive">
+          {BREAD_GUIDE_SCHEMA}
         </Script>
       )}
       {params.slug === "cafe-guide-abuja" && (
